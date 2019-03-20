@@ -1,14 +1,37 @@
 {%  extends 'base.html' %}
 
+
+
+{% block css%}
+<style>
+
+div.jumbotron{
+    color:#ffffff;
+    text-align:center;
+    background: url(http://i65.tinypic.com/293dbu9.jpg);
+    background-size:cover;
+    background-position:center;
+    padding-top:100px;
+    padding-bottom:100px;
+    height: 100%;
+    margin-bottom:0;
+
+}
+
+</style>
+{% endblock%}
+
+
+
 {% block content %}
 
-<h1>This is home Page now!!!!</h1>
-
-
-<h2> Let's start this journey now </h2>
-
-
-<img src="http://i65.tinypic.com/293dbu9.jpg" border="0" alt="Image and video hosting by TinyPic">
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <p></p>
+    <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 
 {% endblock %}
