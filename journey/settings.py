@@ -25,7 +25,7 @@ SECRET_KEY = '_jw)o5gb@p0iw7)$t-crk27%h(#(q2uct@=4=oh_qoq!yuf_vt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myjourney1111.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['127.0.0.1:8000','myjourney.tours']
 
 
 # Application definition
