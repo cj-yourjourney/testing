@@ -41,7 +41,14 @@ INSTALLED_APPS = [
     # Landing Pages - Home, Tours, Contact, About
     'landing_pages',
 
+
+    # Bootstrap Form
+    'crispy_forms',
+
 ]
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

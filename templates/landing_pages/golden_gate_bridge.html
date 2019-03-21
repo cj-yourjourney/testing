@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% load crispy_forms_tags %}
 
 {% block css%}
 <style>
@@ -48,7 +49,7 @@ div.jumbotron{
     <!-- First Row --- about host & Book tour form-->
 
 <div class="row">
-    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-lx-7">
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-lx-8">
     <h5>About your host</h5>
 
 <p><img class='rounded-circle' src="http://i67.tinypic.com/1z5nu3a.png" width="120" height="120">
@@ -81,14 +82,25 @@ Departing the marina, we will cruise along the Sausalito foreshore and out under
        <!-- end of left col-->
 
 
-    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-lx-5 text-center">
-        <br> <br>
-      <form method="POST", enctype="multipart/form-data"> {% csrf_token %}
-  {{ tour_form.as_p }}
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-lx-4 text-center">
 
-   <button type="submit" class="btn btn-success">Book your Tour</button>
+
+        <div class="card">
+   <div class="card-body">
+
+
+      <form method="POST", enctype="multipart/form-data"> {% csrf_token %}
+  {{ tour_form.name|as_crispy_field }}
+  {{ tour_form.email|as_crispy_field }}
+  {{ tour_form.tour_date|as_crispy_field }}
+
+          <br><br>
+   <button type="submit" class="btn btn-danger btn-lg">Book your Tour</button>
+          <br><br> <br>
 </form>
 </div>
+</div>
+   </div>
 
 </div>
 
