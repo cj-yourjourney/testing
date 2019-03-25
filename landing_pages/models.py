@@ -9,6 +9,7 @@ class Tour(models.Model):
     name            = models.CharField(max_length=150)
     email           = models.CharField(max_length=150)
     tour_date       = models.CharField(max_length=150)
+    number_of_people  = models.CharField(max_length=150)
 
 
 

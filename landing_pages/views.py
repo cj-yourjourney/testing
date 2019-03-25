@@ -24,9 +24,10 @@ def golden_gate_bridge(request):
         name = submitted_tour_form['name']
         email = submitted_tour_form['email']
         date = submitted_tour_form['tour_date']
+        number_of_people = submitted_tour_form['number_of_people']
 
         # Create a Tour Reservation
-        new_tour = Tour.objects.create(name=name, email=email, tour_date=date)
+        new_tour = Tour.objects.create(name=name, email=email, tour_date=date,number_of_people=number_of_people)
 
         # redirect the thank-you page after users created a new tour
         return redirect("/thank-you/")

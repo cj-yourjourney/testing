@@ -34,7 +34,7 @@ div.jumbotron{
 
         <br><br><br><br><br><br><br><br>
 
-         <h1 class="text-left text-buttom">Golden Gate Bridge Tour</h1>
+         <h1 class="text-left text-buttom">Golden Gate Bridge Walking Tour</h1>
     </div>
 
 
@@ -53,31 +53,41 @@ div.jumbotron{
     <h5>About your host</h5>
 
 <p><img class='rounded-circle' src="http://i67.tinypic.com/1z5nu3a.png" width="120" height="120">
+  &nbsp;&nbsp;&nbsp;&nbsp; <b class="lead ">CJ Luo</b> </p>
+
+
+
+<p class="text-muted lead">
+    I am a freelance Tour Guide & R&B singer. <br>
+    <br>
+    Before settling in San Francisco,I’ve been traveling the world, one backpacking trip at a time, seeing those magic moments in everyone’s daily life.
+    <br>
+    <br>
+    Now, I've lived in SF for 5 years and love it from the bottom of my heart.
 </p>
-
-
-
-<p class="text-muted lead">I'm a professional Captain with an expansive career that has taken me from Australia to Canada and now USA.
-I have run SCUBA dive tours, Jet Boat thrill rides, fishing, whale watching and simple fun on the ocean trips for over 10 years.
-I am first aid trained with all tours having an emphasis on safety first.
-.</p>
 
         <hr>
 
 
 <h5>What we'll do</h5> <br>
 
-<p class="text-muted lead">Embarking at Bluewater Yacht Harbor in Sausalito, you will receive a full safety brief and the boat tour.
-Departing the marina, we will cruise along the Sausalito foreshore and out under the iconic Golden Gate Bridge for that 'Postcard photo.'
+<p class="text-muted lead">The walking tour takes 40 mins. We'll meet at the Golden Gate Bridge Welcome Center. <a
+        href="https://www.google.com/maps/place/Golden+Gate+Bridge+Welcome+Center/@37.8077489,-122.4771407,17z/data=!3m1!4b1!4m5!3m4!1s0x80858690432c06e7:0xfac9601f983db5bd!8m2!3d37.8077489!4d-122.474952" target="_blank">See Map Here</a> <br> <br>
+
+I'll take you to the best spots to enjoy the view of the Golden Gate Bridge and tell you the remarkable stories behind the bridge.
+    <br><br>
+
+Additionally, I will tell where to eat & visit if you have more questions. I will try my best to help you.
 </p>
 
     <hr>
 
 
 <h5>What else you should know</h5> <br>
-<p class="text-muted lead">Seasickness is a real thing that can hit anyone in any condition, if you are at all unsure please take precautions in advance and guarantee to not be sabotaged by the green feeling, it is avoidable.
-  </p>
-
+<p class="text-muted lead"> 1. This tour has 8 people so don't be late. <br><br>
+        2. We will NOT walk across the bridge.
+</p>
+        <br><br>
 </div>
        <!-- end of left col-->
 
@@ -93,9 +103,12 @@ Departing the marina, we will cruise along the Sausalito foreshore and out under
   {{ tour_form.name|as_crispy_field }}
   {{ tour_form.email|as_crispy_field }}
   {{ tour_form.tour_date|as_crispy_field }}
+  {{ tour_form.number_of_people|as_crispy_field }}
 
           <br><br>
-   <button type="submit" class="btn btn-danger btn-lg">Book your Tour</button>
+         <p class="lead"> $3.99 per person </p>
+          <p class="text-muted">*No Credit Card Required</p>
+   <button type="submit" class="btn btn-danger btn-lg">SEND REQUEST</button>
           <br><br> <br>
 </form>
 </div>
