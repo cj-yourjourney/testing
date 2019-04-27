@@ -44,6 +44,9 @@ INSTALLED_APPS = [
 
     # Bootstrap Form
     'crispy_forms',
+    
+    'shoes',
+
 
 ]
 
