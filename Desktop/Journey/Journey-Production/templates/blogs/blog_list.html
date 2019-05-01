@@ -1,0 +1,10 @@
+<h1>Blog List</h1>
+
+
+{% for blog in blogs %}
+
+ <a href="/blogs/{{ blog.slug}}">{{ blog.title }}</a>
+
+
+
+{% endfor %}
