@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Sitemap for SEO
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+
 
     # Landing Pages - Home, Tours, Contact, About
     'landing_pages',
@@ -55,10 +59,10 @@ INSTALLED_APPS = [
 
 
 
-
-
 ]
 
+
+SITE_ID = 1
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
